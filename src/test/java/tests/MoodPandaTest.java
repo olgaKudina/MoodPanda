@@ -2,12 +2,10 @@ package tests;
 import org.testng.annotations.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
-import static pages.IConstants.LOGIN;
-import static pages.IConstants.PASSWORD;
 import static pages.MoodUpdatedModalPage.HOW_TO_BECOME_PATRON_INSTRUCTION_CSS;
 import static pages.MyUpdatesPage.MY_UPDATES_SECTION_CSS;
 
-public class MoodPandaTest extends BaseTest{
+public class MoodPandaTest extends BaseTest implements IConstants{
 
     @Test(description = "Login, update Mood and ensure How to become patron present")
     public void loginTest(){
@@ -26,7 +24,7 @@ public class MoodPandaTest extends BaseTest{
         loginPage
                 .openPage()
                 .login(LOGIN, PASSWORD);
-        myUpdatesPage.addMyUpdates();
+        myUpdatesPage.addMyUpdates("Have a good Day!");
         $(MY_UPDATES_SECTION_CSS).shouldHave(text("Have a good Day"));
     }
 }

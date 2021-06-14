@@ -2,7 +2,7 @@ package pages;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class LoginPage implements IConstants{
+public class LoginPage{
 
     public static final String EMAIL_INPUT_CSS = "#ContentPlaceHolderContent_TextBoxEmail";
     public static final String PASSWORD_INPUT_CSS = "#ContentPlaceHolderContent_TextBoxPassword";

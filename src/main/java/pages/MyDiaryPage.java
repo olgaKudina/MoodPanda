@@ -1,9 +1,9 @@
 package pages;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class MyDiaryPage implements IConstants{
+public class MyDiaryPage{
 
-    public String getText() {
+    public String getBadgeText() {
         return $$(".badge.pull-right").get(0).getText();
     }
 }

@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import pages.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class BaseTest {
+public class BaseTest implements IConstants{
 
     LoginPage loginPage;
     FeedPage feedPage;

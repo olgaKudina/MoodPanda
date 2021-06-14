@@ -1,6 +1,6 @@
 package pages;
 import static com.codeborne.selenide.Selenide.$;
-public class MoodUpdatedModalPage implements IConstants{
+public class MoodUpdatedModalPage{
 
     public static final String GO_TO_MY_DIARY_BUTTON_CSS = ".ButtonMyDiary";
     public static final String URGENT_LINK_CSS =  "a[href='/urgent']";

@@ -3,7 +3,7 @@ import com.codeborne.selenide.Condition;
 import java.time.Duration;
 import static com.codeborne.selenide.Selenide.$;
 
-public class FeedPage implements IConstants{
+public class FeedPage{
 
     public static final String UPDATE_MOOD_BUTTON_CSS = "#LinkUpdate";
 
